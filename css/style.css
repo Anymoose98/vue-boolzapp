@@ -74,9 +74,16 @@ body{
     line-height: 1;
 }
 
+/* Ricerca */
 .ricerca{
     width: 80%;
     border: 0px;
+}
+
+/* Contatti */
+.img-contatti{
+    height: 80px;
+    border-radius: 50%;
 }
 
 .colonna2{
