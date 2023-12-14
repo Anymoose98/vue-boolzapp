@@ -21,6 +21,13 @@ body{
     height: 100%;
 }
 
+.width-40{
+    width: 40%;
+}
+.width-60{
+    width: 60%;
+}
+
 .grigio-scuro{
     color: rgb(182, 182, 182);
 }
@@ -30,14 +37,41 @@ body{
     padding: 0;
 }
 
+.bg-azzurro{
+    background-color: rgb(143, 223, 255);
+}
+
 /* contatti e informazioni personali */
 .dati-personali{
     height: 50px;
 }
 
 .img-io{
+    height: 35px;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+.altezza-dati-personali{
     height: 50px;
-    border-radius: 50;
+}
+
+/* notifiche */
+.silenzioso{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(143, 223, 255);
+}
+
+.sottolineato{
+    color: grey;
+    font-size: small;
+    text-decoration: underline;
+}
+
+.scritte-vicine{
+    line-height: 1;
 }
 
 .colonna2{
