@@ -18,6 +18,7 @@ body{
     background-color: white;
     margin: auto;
     margin-top: 50px;
+    height: 800px;
 }
 
 .row{
@@ -33,6 +34,10 @@ body{
 
 .grigio-scuro{
     color: rgb(182, 182, 182);
+}
+
+.nero-chiaro{
+    color: rgb(100, 100, 100);
 }
 
 .bg-grigio{
@@ -59,6 +64,10 @@ body{
     height: 50px;
 }
 
+.bordo-r{
+    border-right: 1px solid rgb(200, 200, 200) ;
+}
+
 /* notifiche */
 .silenzioso{
     padding: 10px;
@@ -77,6 +86,8 @@ body{
     line-height: 1;
 }
 
+
+
 /* Ricerca */
 .ricerca{
     width: 80%;
@@ -90,10 +101,33 @@ body{
 }
 
 .colonna2{
-    background-color: rgb(60, 255, 6);
     height: 100%;
+    
 }
 
 .effetto-grigio:hover{
     background-color: rgb(240, 240, 240);
+}
+
+.scorrimento-l{
+    overflow-y: auto;
+    max-height: 650px;
+}
+
+/* Chat */
+.sfondo-foto{
+    background-image: url(../img/mine.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.scorrimento-r{
+    overflow-y: auto;
+    height: 700px;
+    max-height: 700px;
+}
+
+/* input risposta */
+.input-risposta{
+    height: 50px;
 }
