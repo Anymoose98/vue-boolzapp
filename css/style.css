@@ -4,3 +4,15 @@
     box-sizing: border-box;
 }
 
+body{
+    background: linear-gradient(to bottom, #009788 150px, #DADBD5 150px);
+    height: 100vh;
+}
+
+.contenitore-principale{
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+}
