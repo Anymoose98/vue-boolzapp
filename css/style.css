@@ -21,6 +21,24 @@ body{
     height: 100%;
 }
 
+.grigio-scuro{
+    color: rgb(182, 182, 182);
+}
+
+.bg-grigio{
+    background-color:rgb(240, 240, 240);
+    padding: 0;
+}
+
+/* contatti e informazioni personali */
+.dati-personali{
+    height: 50px;
+}
+
+.img-io{
+    height: 50px;
+    border-radius: 50;
+}
 
 .colonna2{
     background-color: rgb(60, 255, 6);
