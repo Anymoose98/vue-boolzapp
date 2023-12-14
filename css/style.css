@@ -74,6 +74,11 @@ body{
     line-height: 1;
 }
 
+.ricerca{
+    width: 80%;
+    border: 0px;
+}
+
 .colonna2{
     background-color: rgb(60, 255, 6);
     height: 100%;
