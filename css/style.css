@@ -9,6 +9,10 @@ body{
     height: 100vh;
 }
 
+.puntatore{
+    cursor: pointer;
+}
+
 .contenitore-principale{
     width: 1000px;
     background-color: white;
@@ -88,4 +92,8 @@ body{
 .colonna2{
     background-color: rgb(60, 255, 6);
     height: 100%;
+}
+
+.effetto-grigio:hover{
+    background-color: rgb(240, 240, 240);
 }
