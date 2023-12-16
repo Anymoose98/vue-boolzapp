@@ -131,3 +131,26 @@ body{
 .input-risposta{
     height: 50px;
 }
+
+.sent{
+    background-color: rgb(217, 255, 190);
+    border-radius: 8px;
+    width: 45%;
+    align-self: flex-end;
+    margin-right: 15px;
+
+}
+
+.received{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    width:45%;
+    align-self: flex-start;
+    margin-left: 15px;
+}
+
+
+.scritta-piccola{
+    font-size: 10px;
+}
+

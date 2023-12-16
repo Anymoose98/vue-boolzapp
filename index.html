@@ -94,9 +94,14 @@
                     <!-- persona con cui chatti -->
                     <div class="bg-grigio altezza-dati-personali">
                         <div class="dati-personali d-flex justify-content-between align-items-center">
-                            <div>
-                                <img src="./img/avatar_1.jpg" alt="" class="img-io">
-                                <span><strong>{{ contacts[0].name}}</strong></span>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./img/avatar_1.jpg" alt="" class="img-io">
+                                </div>
+                                <div class="scritte-vicine">
+                                    <span>{{ contacts[0].name}}</span> <br>
+                                    <span class="grigio-scuro">Ultimo accesso oggi alle 12:00</span>
+                                </div>
                             </div>
                             <div class="mx-3">
                                 <i class="puntatore fa-solid fa-magnifying-glass mx-1 grigio-scuro"></i>
@@ -107,9 +112,25 @@
                     </div>
 
                     <!-- Chat -->
-                    <div class="sfondo-foto scorrimento-r">
+                    <div class="sfondo-foto scorrimento-r d-flex flex-column py-4">
                         
+                        <div class="d-flex sent my-1 justify-content-between">
+                            <div class="mx-2 my-2"> Hai portato a spasso il cane?</div>
+                            <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:30</span>
+                        </div>
+
+                        <div class="d-flex sent my-1 justify-content-between">
+                            <div class="mx-2 my-2"> Ricordati di stendere i panni</div>
+                            <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:30</span>
+                        </div>
+
+                        <div class="d-flex received my-1 justify-content-between">
+                            <div class="mx-2 my-2"> Tutto fatto!</div>
+                            <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:30</span>
+                        </div>
                     </div>
+
+                 
                     
                     <!-- Input per rispondere -->
                     <div class="input-risposta bg-grigio d-flex justify-content-between align-items-center">
