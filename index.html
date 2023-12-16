@@ -96,7 +96,7 @@
                         <div class="dati-personali d-flex justify-content-between align-items-center">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <img src="./img/avatar_1.jpg" alt="" class="img-io">
+                                    <img :src="contacts[0].avatar" alt="" class="img-io">
                                 </div>
                                 <div class="scritte-vicine">
                                     <span>{{ contacts[0].name}}</span> <br>
@@ -129,6 +129,13 @@
                             <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:30</span>
                         </div>
                     </div>
+
+                    
+                        <div v-for="(messages,indexMessages)" in contacts[0].messages :class="{contacts[0].messages.status == sent ? 'd-flex sent my-1 justify-content-between' : 'd-flex received my-1 justify-content-between'} " >
+                            <div class="mx-2 my-2"> {{messages.message}}</div>
+                            <span class="scritta-piccola align-self-end grigio-scuro mx-1">{{.messages.date}}</span>
+                        </div>
+                    
 
                  
                     
