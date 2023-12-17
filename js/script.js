@@ -184,7 +184,7 @@ createApp({
 
         // Aggiungere contenuto
         aggiungereContenuto(contatore){
-            console.log("funziona")
+            
             let Testo ={
                 date: '10/01/2020 15:30:55',
                 message: this.newText,
@@ -192,8 +192,16 @@ createApp({
             }
     
             this.contacts[contatore].messages.push(Testo),
-            this.newText = ""
-    
-        }
-  }
+            this.newText = ""       
+            let risposta ={
+                date: '10/01/2020 15:30:55',
+                message: "ok",
+                status: 'received'
+            }
+            console.log("funziona")
+            this.contacts[contatore].messages.push(risposta)
+        },
+
+
+    }
 }).mount('#app')
