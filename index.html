@@ -142,7 +142,7 @@
                             <i class="puntatore fa-regular fa-face-smile fa-lg nero-chiaro mx-3"></i>
                         </div>
                         <div class="col-10">
-                            <input type="text" placeholder="Scrivi un messaggio" class="form-control">
+                            <input type="text" placeholder="Scrivi un messaggio" class="form-control" v-model="newText" @keydown.enter="aggiungereContenuto(contatore)">
                         </div>
                         <div class="col-1">
                             <i class="puntatore fa-solid fa-microphone fa-lg mx-3 nero-chiaro"></i>

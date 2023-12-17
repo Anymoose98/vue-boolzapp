@@ -5,6 +5,8 @@ createApp({
     return {
 
         contatore: 0,
+        
+        newText: "",
 
       contacts: [
         {
@@ -179,5 +181,19 @@ createApp({
             this.contatore = index
             console.log(this.contatore)
         },
+
+        // Aggiungere contenuto
+        aggiungereContenuto(contatore){
+            console.log("funziona")
+            let Testo ={
+                date: '10/01/2020 15:30:55',
+                message: this.newText,
+                status: 'sent'
+            }
+    
+            this.contacts[contatore].messages.push(Testo),
+            this.newText = ""
+    
+        }
   }
 }).mount('#app')
