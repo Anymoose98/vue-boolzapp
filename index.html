@@ -68,7 +68,7 @@
                     </ul> -->
                     <div class="scorrimento-l">
                         <ul class="list-unstyled ">
-                            <li v-for="(contacts, index) in contacts" :key="index" @click="clicktochange(index)">
+                            <li v-for="(contacts, index) in contacts" :key="index" @click="clicktochange(index)" :class="(index == contatore) ? 'bg-grigio' : ''">
                                 <div class="puntatore effetto-grigio d-flex align-items-center justify-content-between my-3">
                                     <div class="d-flex align-items-center">
                                         <div>
