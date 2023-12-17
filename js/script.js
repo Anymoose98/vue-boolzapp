@@ -182,7 +182,7 @@ createApp({
             console.log(this.contatore)
         },
 
-        // Aggiungere contenuto
+        // Aggiungere contenuto e risposta dopo 1s
         aggiungereContenuto(contatore){
             
             let Testo ={
@@ -193,15 +193,18 @@ createApp({
     
             this.contacts[contatore].messages.push(Testo),
             this.newText = ""       
-            let risposta ={
-                date: '10/01/2020 15:30:55',
+
+
+            setTimeout(() => {
+            let risposta = {
+                date: '10/01/2020 15:30:56',
                 message: "ok",
                 status: 'received'
-            }
-            console.log("funziona")
-            this.contacts[contatore].messages.push(risposta)
+            };
+            console.log("funziona");
+            this.contacts[contatore].messages.push(risposta);
+        }, 1000);
         },
-
 
     }
 }).mount('#app')
