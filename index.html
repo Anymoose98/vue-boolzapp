@@ -113,8 +113,13 @@
 
                     <!-- Chat -->
                     <div class="sfondo-foto scorrimento-r d-flex flex-column py-4">
+
+                        <div v-for="(message, indexMessage) in contacts[0].messages" :key="indexMessage" class="d-flex my-1 justify-content-between" :class="{ 'sent': message.status === 'sent', 'received': message.status === 'received' }">   
+                            <div class="mx-2 my-2">{{ message.message }}</div>
+                            <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:00</span>
+                        </div>
                         
-                        <div class="d-flex sent my-1 justify-content-between">
+                         <!-- <div class="d-flex sent my-1 justify-content-between">
                             <div class="mx-2 my-2"> Hai portato a spasso il cane?</div>
                             <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:30</span>
                         </div>
@@ -127,14 +132,13 @@
                         <div class="d-flex received my-1 justify-content-between">
                             <div class="mx-2 my-2"> Tutto fatto!</div>
                             <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:30</span>
-                        </div>
+                        </div> -->
                     </div>
 
+
                     
-                        <div v-for="(messages,indexMessages)" in contacts[0].messages :class="{contacts[0].messages.status == sent ? 'd-flex sent my-1 justify-content-between' : 'd-flex received my-1 justify-content-between'} " >
-                            <div class="mx-2 my-2"> {{messages.message}}</div>
-                            <span class="scritta-piccola align-self-end grigio-scuro mx-1">{{.messages.date}}</span>
-                        </div>
+                     
+                    
                     
 
                  
