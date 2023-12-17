@@ -174,6 +174,10 @@ createApp({
   },
 
   methods: {
-
+        // Click per cambiare chat
+        clicktochange(index){
+            this.contatore = index
+            console.log(this.contatore)
+        },
   }
 }).mount('#app')
