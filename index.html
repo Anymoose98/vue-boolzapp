@@ -96,10 +96,10 @@
                         <div class="dati-personali d-flex justify-content-between align-items-center">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <img :src="contacts[0].avatar" alt="" class="img-io">
+                                    <img :src="contacts[contatore].avatar" alt="" class="img-io">
                                 </div>
                                 <div class="scritte-vicine">
-                                    <span>{{ contacts[0].name}}</span> <br>
+                                    <span>{{ contacts[contatore].name}}</span> <br>
                                     <span class="grigio-scuro">Ultimo accesso oggi alle 12:00</span>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@
                     <!-- Chat -->
                     <div class="sfondo-foto scorrimento-r d-flex flex-column py-4">
 
-                        <div v-for="(message, indexMessage) in contacts[0].messages" :key="indexMessage" class="d-flex my-1 justify-content-between" :class="{ 'sent': message.status === 'sent', 'received': message.status === 'received' }">   
+                        <div v-for="(message, indexMessage) in contacts[contatore].messages" :key="indexMessage" class="d-flex my-1 justify-content-between" :class="{ 'sent': message.status === 'sent', 'received': message.status === 'received' }">   
                             <div class="mx-2 my-2">{{ message.message }}</div>
                             <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:00</span>
                         </div>
