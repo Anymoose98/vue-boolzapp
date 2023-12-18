@@ -4,9 +4,13 @@ createApp({
   data() {
     return {
 
+        search: "",
+
         contatore: 0,
         
         newText: "",
+
+        
 
       contacts: [
         {
@@ -170,7 +174,8 @@ createApp({
                 }
             ],
         }
-    ]
+    ],
+
     
     }
   },
@@ -179,7 +184,7 @@ createApp({
         // Click per cambiare chat
         clicktochange(index){
             this.contatore = index
-            console.log(this.contatore)
+            console.log(this.risultato)
         },
 
         // Aggiungere contenuto e risposta dopo 1s
@@ -204,6 +209,12 @@ createApp({
             console.log("funziona");
             this.contacts[contatore].messages.push(risposta);
         }, 1000);
+        },
+
+        // Ricerca
+        ricerca(search){ 
+            contacts = this.contacts.filter(contact => contact.name.toLowerCase().includes(this.search.toLowerCase()));
+            return contacts
         },
 
     }
