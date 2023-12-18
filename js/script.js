@@ -176,7 +176,10 @@ createApp({
         }
     ],
 
-    
+
+
+
+
     }
   },
 
@@ -212,9 +215,15 @@ createApp({
         },
 
         // Ricerca
-        ricerca(search){ 
-            contacts = this.contacts.filter(contact => contact.name.toLowerCase().includes(this.search.toLowerCase()));
-            return contacts
+        ricerca(){ 
+            this.contacts.forEach((contact) => {
+                if (contact.name.toLowerCase().includes(this.search.toLowerCase())) {
+                  contact.visible = true;
+                  console.log(this.contacts)
+                } else {
+                  contact.visible = false;
+                  console.log(this.contacts)
+                }});
         },
 
     }
