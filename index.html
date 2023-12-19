@@ -17,17 +17,18 @@
                     <!-- Dati personali -->
                     <div class="bg-grigio altezza-dati-personali bordo-r">
                             
-                                <div class="dati-personali d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <img src="./img/avatar_io.jpg" alt="io" class="img-io">
-                                        <span><strong>Sofia</strong></span>
-                                    </div>
-                                    <div class="mx-3">
-                                        <i class="puntatore fa-solid fa-circle-notch mx-1 grigio-scuro"></i>
-                                        <i class="puntatore fa-solid fa-message mx-1 grigio-scuro"></i>
-                                        <i class="puntatore fa-solid fa-ellipsis-vertical mx-1 grigio-scuro"></i>
-                                    </div>
-                                </div>
+                        <div class="dati-personali d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="./img/avatar_io.jpg" alt="io" class="img-io">
+                                <span><strong>Sofia</strong></span>
+                            </div>
+                          <div class="mx-3">
+                               <i class="puntatore fa-solid fa-circle-notch mx-1 grigio-scuro"></i>
+                               <i class="puntatore fa-solid fa-message mx-1 grigio-scuro"></i>
+                               <i class="puntatore fa-solid fa-ellipsis-vertical mx-1 grigio-scuro"></i>
+                           </div>
+                       </div>
+
                     </div>
 
                     <!-- notifiche messaggi -->
@@ -48,25 +49,7 @@
                     </div>
 
                     <!-- contatti -->
-                    <!-- template contatti -->
-                    <!-- <ul class="list-unstyled">
-                        <li>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <img src="./img/avatar_1.jpg" alt="" class="img-contatti mx-2">
-                                    </div>
-                                    <div class="mx-2 scritte-vicine">
-                                        <span>Michele</span><br>
-                                        <span class="grigio-scuro">ultimo messaggio inviato</span>
-                                    </div>
-                                </div>
-                                <div class="align-self-start mx-2">
-                                    <span class="grigio-scuro">12:00</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul> -->
+                 
                     <div class="scorrimento-l">
                         <ul class="list-unstyled ">
                             <li v-for="(contacts, index) in contacts" :key="index" @click="clicktochange(index)" :class="(index == contatore) ? 'bg-grigio' : '' " v-show="contacts.visible" >
@@ -119,21 +102,7 @@
                             <div class="mx-2 my-2">{{ message.message }}</div>
                             <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:00</span>
                         </div>
-                        
-                         <!-- <div class="d-flex sent my-1 justify-content-between">
-                            <div class="mx-2 my-2"> Hai portato a spasso il cane?</div>
-                            <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:30</span>
-                        </div>
-
-                        <div class="d-flex sent my-1 justify-content-between">
-                            <div class="mx-2 my-2"> Ricordati di stendere i panni</div>
-                            <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:30</span>
-                        </div>
-
-                        <div class="d-flex received my-1 justify-content-between">
-                            <div class="mx-2 my-2"> Tutto fatto!</div>
-                            <span class="scritta-piccola align-self-end grigio-scuro mx-1">15:30</span>
-                        </div> -->
+                
                     </div>
 
    
@@ -150,11 +119,9 @@
                         </div>
                     </div>
                 </div>
-        </div>
-
-            
+        </div>     
     </div>
-    </div>
+    
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="./js/script.js" type="text/javascript"></script>
 </body>
